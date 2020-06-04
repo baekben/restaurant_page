@@ -1,3 +1,3 @@
-import { nav } from './info';
+import { nav } from './home';
 
 nav();
