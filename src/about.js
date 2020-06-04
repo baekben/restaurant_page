@@ -1,16 +1,15 @@
 function about() {
-  var about = document.createElement('div');
-  about.id = 'about';
+  const heading = document.createElement('h1');
+  const bio = document.createElement('h3');
+  const article = document.getElementById('article');
+  article.innerHTML = '';
 
-  var heading = document.createElement('h1');
-  var bio = document.createElement('h3');
+  article.appendChild(heading);
+  article.appendChild(bio);
 
   heading.innerHTML = 'About Us';
   bio.innerHTML =
     'Story about how restaurant was formed. \n From a family recipe the popularity of the resturant grew and was brought to the US';
-
-  about.appendChild(heading);
-  about.appendChild(bio);
-
-  document.body.appendChild(about);
 }
+
+export { about };
