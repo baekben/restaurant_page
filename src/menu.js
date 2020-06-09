@@ -14,7 +14,11 @@ function menu() {
   options();
 }
 const options = () => {
-  const classicBurger = items('Classic Burger', '10', 'Beef burger');
+  const classicBurger = items(
+    'Burger',
+    '10',
+    'Beef burger, Chicken Burger, Veggie Burger'
+  );
   const sandwich = items(
     'Sandwich',
     '8',
@@ -22,9 +26,27 @@ const options = () => {
   );
   const spaghetti = items('Spaghetti', '12', 'Plain old spaghetti');
   const lasagna = items('Lasagna', '12', 'Fresh from the oven');
-  const tomato = items('Tomato Soup', '5', 'Homemade');
+  const tomato = items('Tomato Soup', '5', 'Homemade organic tomato soup');
+  const pizza = items(
+    'Pizza',
+    '8',
+    'Pepperoni, Cheese, Meat, BBQ Chicken, Buffalo, Veggie'
+  );
+  const drinks = items(
+    'Drinks',
+    '5',
+    'Orange Juice, Apple Juice, Strawberry Smoothie, Chocolate Shake'
+  );
 
-  currentMenu.push(classicBurger, sandwich, spaghetti, lasagna, tomato);
+  currentMenu.push(
+    classicBurger,
+    sandwich,
+    spaghetti,
+    lasagna,
+    tomato,
+    pizza,
+    drinks
+  );
 };
 
 const items = (item, price, desc) => {

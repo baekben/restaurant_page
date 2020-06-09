@@ -10,6 +10,10 @@ function contact() {
   heading.innerHTML = 'Contact Us';
   info.innerHTML =
     '12345 PL 67st <br>ABC, DEFGHI XXXXXX <br><br>Phone:(123)456-7890<br>Email: restaurant@food.mmm';
+
+  const map = document.createElement('img');
+  map.setAttribute('src', 'img/map.jpg');
+  article.appendChild(map);
 }
 
 export { contact };

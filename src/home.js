@@ -11,8 +11,7 @@ function nav() {
   const motto = document.createElement('h4');
 
   heading.innerHTML = 'Fancy Restaurant Est.19XX';
-  motto.innerHTML =
-    'Bringing classic "insert European country here" food since 19XX';
+  motto.innerHTML = 'Providing classic favorites since 19XX';
   content.appendChild(main);
   mainText.appendChild(heading);
   mainText.appendChild(motto);
