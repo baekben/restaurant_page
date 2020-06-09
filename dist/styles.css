@@ -1,0 +1,46 @@
+header {
+  text-align: center;
+}
+
+#article {
+  text-align: center;
+}
+
+#homeImg {
+  height: 45%;
+  width: 25%;
+}
+
+.mainTabs {
+  background-color: white;
+  border: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.mainTabs:hover {
+  opacity: 0.5;
+  text-decoration: underline;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('img/top_food.jpg');
+  height: 25%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.mainText {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+}
+
+.mainText h1 {
+  font-size: 3em;
+}

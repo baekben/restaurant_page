@@ -1,4 +1,4 @@
-import { nav } from './home';
+import { nav, welcome } from './home';
 import { about } from './about';
 import { contact } from './contact';
 import { menu } from './menu';
@@ -19,10 +19,13 @@ const tab = () => {
   contact.innerHTML = 'Contact';
 
   article.setAttribute('id', 'article');
-  tabs.setAttribute('id', 'tabs');
+  tabs.setAttribute('class', 'tabs');
   about.setAttribute('id', 'tabAbout');
+  about.setAttribute('class', 'mainTabs');
   menu.setAttribute('id', 'tabMenu');
+  menu.setAttribute('class', 'mainTabs');
   contact.setAttribute('id', 'tabContact');
+  contact.setAttribute('class', 'mainTabs');
 
   content.appendChild(header);
   content.appendChild(article);
@@ -31,6 +34,7 @@ const tab = () => {
   tabs.appendChild(menu);
   tabs.appendChild(contact);
 
+  welcome();
   tabs.addEventListener('click', (e) => {
     chooseTab(e.target.id);
   });
