@@ -2,10 +2,6 @@ header {
   text-align: center;
 }
 
-#article {
-  text-align: center;
-}
-
 #homeImg {
   height: 45%;
   width: 25%;
@@ -43,4 +39,20 @@ header {
 
 .mainText h1 {
   font-size: 3em;
+}
+#article {
+  text-align: center;
+}
+
+.mainMenu h3 {
+  position: relative;
+  margin: 0 25% 0 25%%;
+}
+
+.mainMenu h3 span {
+  display: block;
+}
+
+.mainMenu p {
+  font-style: italic;
 }
