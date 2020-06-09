@@ -6,7 +6,6 @@ function menu() {
   mainMenu.setAttribute('class', 'mainMenu');
   const article = document.getElementById('article');
 
-  article.innerHTML = '';
 
   article.appendChild(heading);
   article.appendChild(mainMenu);

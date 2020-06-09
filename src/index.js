@@ -36,6 +36,8 @@ const tab = () => {
 
   welcome();
   tabs.addEventListener('click', (e) => {
+    article.innerHTML = '';
+
     chooseTab(e.target.id);
   });
 };
